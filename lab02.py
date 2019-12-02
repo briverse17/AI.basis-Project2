@@ -37,7 +37,7 @@ class KB:
                 if False in resolvents:
                     count += 1
                     buf += "{}\n"
-                    
+
             self.result += str(count) + '\n' + buf
 
             if "{}\n" in buf:
@@ -248,11 +248,6 @@ def main(args):
     '''
     Driver function
     '''
-
-    print(args.input)
-
-    print(args.output)
-
     alpha, KB_sentences = read_input(args.input)
 
     agent = KB(sentences = KB_sentences)
